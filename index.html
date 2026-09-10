@@ -1,1 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Prince Bakery | Freshly Baked With Love</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-container">
+
+      <a href="#home" class="logo">
+        <span class="logo-icon">♛</span>
+        <span>
+          <strong>PRINCE</strong>
+          <small>BAKERY</small>
+        </span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#cakes">Cakes</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="cart-btn" onclick="openCart()">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span id="cartCount">0</span>
+        </button>
+
+        <a class="order-btn" href="https://wa.me/918707050016?text=Hello%20Prince%20Bakery,%20I%20want%20to%20place%20an%20order." target="_blank">
+          Order Now
+        </a>
+
+        <button class="menu-toggle" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+  <main>
+
+    <section class="hero" id="home">
+
+      <div class="hero-content">
+
+        <div class="eyebrow">
+          <span></span>
+          FRESH EVERY DAY
+          <span></span>
+        </div>
+
+        <h1>
+          Freshly Baked.<br>
+          <em>Made With Love.</em>
+        </h1>
+
+        <p>
+          Delicious cakes, pastries, breads and sweet moments
+          crafted fresh every day.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#menu" class="primary-btn">
+            Explore Our Menu
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+
+          <a href="https://wa.me/918707050016?text=Hello%20Prince%20Bakery,%20I%20want%20to%20order." class="whatsapp-btn" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+            WhatsApp Order
+          </a>
+        </div>
+
+        <div class="scroll-text">
+          <i class="fa-solid fa-arrow-down"></i>
+          SCROLL TO DISCOVER
+        </div>
+
+      </div>
+
+
+      <div class="hero-image">
+
+        <div class="image-circle"></div>
+
+        <div class="cake-card floating">
+          <div class="cake-emoji">🎂</div>
+          <strong>Fresh Cakes</strong>
+          <span>Made daily</span>
+        </div>
+
+        <div class="hero-cake">
+          🍰
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- FEATURES -->
+    <section class="features">
+
+      <div class="feature">
+        <div class="feature-icon">
+          <i class="fa-solid fa-wheat-awn"></i>
+        </div>
+        <div>
+          <h3>Fresh Ingredients</h3>
+          <p>Quality ingredients in every bite.</p>
+        </div>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+        <div>
+          <h3>Made With Love</h3>
+          <p>Freshly prepared with care.</p>
+        </div>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">
+          <i class="fa-solid fa-truck"></i>
+        </div>
+        <div>
+          <h3>Easy Ordering</h3>
+          <p>Order quickly on WhatsApp.</p>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+
+      <div class="about-image">
+        <div class="about-box">
+          <span>♥</span>
+          <strong>Since</strong>
+          <b>PRINCE</b>
+          <small>BAKERY</small>
+        </div>
+      </div>
+
+      <div class="about-content">
+
+        <div class="section-label">OUR STORY</div>
+
+        <h2>
+          Baked Fresh.<br>
+          <em>Served With Heart.</em>
+        </h2>
+
+        <p>
+          At Prince Bakery, every treat is prepared with passion,
+          quality ingredients and a whole lot of love.
+        </p>
+
+        <p>
+          From soft breads and buttery pastries to beautiful cakes
+          for your special occasions, we make every bite memorable.
+        </p>
+
+        <a href="#menu" class="text-btn">
+          Discover Our Menu
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- MENU -->
+    <section class="menu section" id="menu">
+
+      <div class="section-heading">
+        <div class="section-label">OUR MENU</div>
+        <h2>Something Delicious<br><em>For Everyone.</em></h2>
+        <p>Freshly baked favourites made for every craving.</p>
+      </div>
+
+
+      <div class="products">
+
+        <article class="product-card">
+
+          <div class="product-image cake-bg">
+            🎂
+            <span class="popular">POPULAR</span>
+          </div>
+
+          <div class="product-info">
+            <span class="product-category">CAKES</span>
+            <h3>Fresh Cream Cake</h3>
+            <p>Soft sponge layered with delicious fresh cream.</p>
+
+            <div class="product-bottom">
+              <strong>₹499</strong>
+              <button onclick="addToCart('Fresh Cream Cake',499)">
+                Add +
+              </button>
+            </div>
+          </div>
+
+        </article>
+
+
+        <article class="product-card">
+
+          <div class="product-image pastry-bg">
+            🥐
+          </div>
+
+          <div class="product-info">
+            <span class="product-category">PASTRIES</span>
+            <h3>Fresh Pastry</h3>
+            <p>Soft, creamy and freshly baked every day.</p>
+
+            <div class="product-bottom">
+              <strong>₹80</strong>
+              <button onclick="addToCart('Fresh Pastry',80)">
+                Add +
+              </button>
+            </div>
+          </div>
+
+        </article>
+
+
+        <article class="product-card">
+
+          <div class="product-image bread-bg">
+            🍞
+          </div>
+
+          <div class="product-info">
+            <span class="product-category">BREAD</span>
+            <h3>Fresh Milk Bread</h3>
+            <p>Soft and delicious bread baked fresh.</p>
+
+            <div class="product-bottom">
+              <strong>₹50</strong>
+              <button onclick="addToCart('Fresh Milk Bread',50)">
+                Add +
+              </button>
+            </div>
+          </div>
+
+        </article>
+
+
+        <article class="product-card">
+
+          <div class="product-image cupcake-bg">
+            🧁
+          </div>
+
+          <div class="product-info">
+            <span class="product-category">SPECIAL</span>
+            <h3>Special Cupcake</h3>
+            <p>Beautiful little treats for every occasion.</p>
+
+            <div class="product-bottom">
+              <strong>₹60</strong>
+              <button onclick="addToCart('Special Cupcake',60)">
+                Add +
+              </button>
+            </div>
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta">
+
+      <div>
+        <span class="section-label">SPECIAL MOMENTS</span>
+        <h2>Have a Sweet<br><em>Celebration?</em></h2>
+        <p>Let Prince Bakery make your special day even sweeter.</p>
+      </div>
+
+      <a
+  href="https://wa.me/918707050016?text=Hello%20Prince%20Bakery%2C%20I%20want%20to%20place%20an%20order."
+  target="_blank"
+  rel="noopener noreferrer"
+  class="whatsapp-btn"
+>
+  <i class="fa-brands fa-whatsapp"></i>
+  WhatsApp Order
+</a>
+
+    </section>
+
+
+    <!-- GALLERY -->
+    <section class="gallery section" id="gallery">
+
+      <div class="section-heading">
+        <div class="section-label">OUR GALLERY</div>
+        <h2>Sweet Moments</h2>
+      </div>
+
+      <div class="gallery-grid">
+
+        <div class="gallery-item big">🎂</div>
+        <div class="gallery-item">🥐</div>
+        <div class="gallery-item">🍰</div>
+        <div class="gallery-item">🧁</div>
+        <div class="gallery-item">🍞</div>
+
+      </div>
+
+    </section>
+
+
+    <!-- REVIEWS -->
+    <section class="reviews section" id="reviews">
+
+      <div class="section-heading">
+        <div class="section-label">CUSTOMER LOVE</div>
+        <h2>What Our Customers Say</h2>
+      </div>
+
+      <div class="review-grid">
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>
+            “Fresh, tasty and beautifully made. Prince Bakery is
+            now one of my favourite places for cakes!”
+          </p>
+          <strong>Happy Customer</strong>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>
+            “The cake was delicious and everyone loved it.
+            Highly recommended!”
+          </p>
+          <strong>Happy Customer</strong>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>
+            “Great taste, fresh products and excellent service.”
+          </p>
+          <strong>Happy Customer</strong>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+
+      <div class="contact-content">
+
+        <div class="section-label">GET IN TOUCH</div>
+
+        <h2>
+          Let's Make Something<br>
+          <em>Sweet Together.</em>
+        </h2>
+
+        <p>
+          Have a question or want to place an order?
+          Contact Prince Bakery today.
+        </p>
+
+        <div class="contact-details">
+
+          <a href="tel:8707050016">
+            <i class="fa-solid fa-phone"></i>
+            <span>
+              <small>CALL US</small>
+              8707050016
+            </span>
+          </a>
+
+          <a href="https://wa.me/918707050016" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>
+              <small>WHATSAPP</small>
+              Chat With Us
+            </span>
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-logo">
+      <span>♛</span>
+      <strong>PRINCE BAKERY</strong>
+    </div>
+
+    <p>Freshly baked. Made with love. ♥</p>
+
+    <div class="socials">
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://wa.me/918707050016" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+    </div>
+
+    <div class="copyright">
+      © 2026 Prince Bakery. All Rights Reserved.
+    </div>
+
+  </footer>
+
+
+  <!-- CART -->
+  <div class="cart-overlay" id="cartOverlay" onclick="closeCart(event)">
+
+    <div class="cart" onclick="event.stopPropagation()">
+
+      <button class="close-cart" onclick="closeCart()">×</button>
+
+      <h2>Your Order</h2>
+
+      <div id="cartItems">
+        <p class="empty-cart">Your cart is empty.</p>
+      </div>
+
+      <div class="cart-total">
+        <span>Total</span>
+        <strong>₹<span id="cartTotal">0</span></strong>
+      </div>
+
+      <button class="checkout" onclick="checkout()">
+        <i class="fa-brands fa-whatsapp"></i>
+        Order On WhatsApp
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- TOAST -->
+  <div class="toast" id="toast">
+    Added to your cart! 🧁
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
